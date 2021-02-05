@@ -12,6 +12,8 @@ target 'MentalHealthReactNativeCLI' do
 
   pod 'RNSoundPlayer', :path => '../node_modules/react-native-sound-player'
 
+  pod 'react-native-webview', :path => '../node_modules/react-native-webview'
+
   target 'MentalHealthReactNativeCLITests' do
     inherit! :complete
     # Pods for testing

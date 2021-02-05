@@ -5,12 +5,12 @@ import Fontisto from 'react-native-vector-icons/Fontisto';
 import Entypo from 'react-native-vector-icons/Entypo';
 import Feather from 'react-native-vector-icons/Feather';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-// import StoryScreen from '../screens/StoryScreen';
 // import TherapistStackNavigation from '../components/TherapistStackNavigation'
 // import FitnessScreen from '../screens/FitnessScreen';
 import {colors} from '../constants/theme';
 import {View, Text} from 'react-native';
 import HomeStackNavigator from './HomeStackNavigation';
+import StoryScreen from '../screens/StoryScreen';
 // import FitnessStackNavigator from './FitnessStackNavigation'
 // import VentItOut from '../screens/VentItOut'
 
@@ -59,7 +59,7 @@ const TabNavigation = () => {
         },
       }}>
       <Tab.Screen name="Home" component={HomeStackNavigator} />
-      <Tab.Screen name="Story" component={HomeScreen} />
+      <Tab.Screen name="Story" component={StoryScreen} />
       <Tab.Screen name="Therapist" component={HomeScreen} />
       <Tab.Screen name="Fitness" component={HomeScreen} />
     </Tab.Navigator>

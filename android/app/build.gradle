@@ -130,7 +130,8 @@ android {
 
     defaultConfig {
         applicationId "com.mentalhealthreactnativecli"
-        minSdkVersion rootProject.ext.minSdkVersion
+        minSdkVersion 21
+        multiDexEnabled true
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
