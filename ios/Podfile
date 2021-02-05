@@ -14,6 +14,8 @@ target 'MentalHealthReactNativeCLI' do
 
   pod 'react-native-webview', :path => '../node_modules/react-native-webview'
 
+  pod 'lottie-react-native', :path => '../node_modules/lottie-react-native'
+
   target 'MentalHealthReactNativeCLITests' do
     inherit! :complete
     # Pods for testing

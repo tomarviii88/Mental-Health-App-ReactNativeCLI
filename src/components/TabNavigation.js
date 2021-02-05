@@ -11,6 +11,7 @@ import {colors} from '../constants/theme';
 import {View, Text} from 'react-native';
 import HomeStackNavigator from './HomeStackNavigation';
 import StoryScreen from '../screens/StoryScreen';
+import FitnessStackNavigator from './FitnessStackNavigation';
 // import FitnessStackNavigator from './FitnessStackNavigation'
 // import VentItOut from '../screens/VentItOut'
 
@@ -61,7 +62,7 @@ const TabNavigation = () => {
       <Tab.Screen name="Home" component={HomeStackNavigator} />
       <Tab.Screen name="Story" component={StoryScreen} />
       <Tab.Screen name="Therapist" component={TherapistStackNavigation} />
-      <Tab.Screen name="Fitness" component={HomeScreen} />
+      <Tab.Screen name="Fitness" component={FitnessStackNavigator} />
     </Tab.Navigator>
   );
 };
