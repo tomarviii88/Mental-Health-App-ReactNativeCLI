@@ -1,16 +1,21 @@
-import 'react-native-gesture-handler';
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {View, Text} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
+import {Provider} from 'react-redux';
+import store from './src/redux/store';
+import AuthFlow from './AuthFlow';
 
-const App = () => {
+export default function App() {
   return (
-    <NavigationContainer>
-      <View>
-        <Text>App</Text>
-      </View>
-    </NavigationContainer>
+    <Provider store={store}>
+      <AuthFlow />
+    </Provider>
   );
-};
+}
 
-export default App;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});

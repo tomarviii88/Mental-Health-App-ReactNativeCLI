@@ -2,13 +2,13 @@ import {
   REGISTER_FAIL,
   REGISTER_SUCCESS,
   CONCERN_UPDATE,
-  UPDATE_USER
+  UPDATE_USER,
 } from '../actions/type';
 
 const initialState = {
-  isLogin: false,
+  isLogin: true,
   user: null,
-  profile: null
+  profile: null,
 };
 
 export default function(state = initialState, action) {
@@ -18,26 +18,26 @@ export default function(state = initialState, action) {
         ...state,
         user: action.payload.user,
         profile: action.payload.profile,
-        isLogin: true
+        isLogin: true,
       };
     case REGISTER_FAIL:
       return {
         ...state,
         user: null,
         profile: null,
-        isLogin: false
+        isLogin: false,
       };
     case CONCERN_UPDATE:
       return {
         ...state,
-        profile: action.payload
+        profile: action.payload,
       };
     case UPDATE_USER:
       return {
         ...state,
         // user:action.payload.user,
-        profile:action.payload
-      }
+        profile: action.payload,
+      };
     default:
       return state;
   }
