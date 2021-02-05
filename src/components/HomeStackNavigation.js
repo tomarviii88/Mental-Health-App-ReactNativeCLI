@@ -9,7 +9,7 @@ import EditProfileScreen from '../screens/EditProfileScreen';
 // import TherapistProfile from '../screens/TherapistProfileScreen';
 // import FitnessScreen from '../screens/FitnessScreen';
 // import FitnessSubScreen from '../screens/FitnessSubScreen';
-// import ChatWithTink from '../screens/ChatWithTink';
+import ChatWithTink from '../screens/ChatWithTink';
 // import CreateMeme from '../screens/CreateMeme';
 // import BubbleWrapGame from '../screens/BubbleWrapGame';
 // import PunchGame from '../screens/PunchGame';
@@ -30,6 +30,11 @@ const HomeStackNavigator = () => {
       <Stack.Screen
         name="EditProfile"
         component={EditProfileScreen}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Chat"
+        component={ChatWithTink}
         options={{headerShown: false}}
       />
       {/* <Stack.Screen
