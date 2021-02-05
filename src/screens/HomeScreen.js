@@ -264,52 +264,6 @@ const HomeScreen = props => {
             />
           </View>
         </View>
-        <View>
-          <View style={styles.tracksContainer}>
-            <Text style={styles.trackTitle}>Games to relax your mind!</Text>
-            <View
-              style={{
-                flexDirection: 'row',
-                justifyContent: 'space-between',
-                marginTop: 10,
-              }}>
-              <TouchableOpacity
-                onPress={() => {
-                  props.navigation.navigate('BubbleWrapGame');
-                }}>
-                <Card>
-                  <Card.Content>
-                    <Title>Let's Play!</Title>
-                  </Card.Content>
-                  <Card.Cover
-                    source={{
-                      uri:
-                        'https://media.tenor.com/images/89eaa43774e143008e081adac58933fc/tenor.gif',
-                    }}
-                    style={{width: 160, borderRadius: 10}}
-                  />
-                </Card>
-              </TouchableOpacity>
-              <TouchableOpacity
-                onPress={() => {
-                  props.navigation.navigate('game');
-                }}>
-                <Card>
-                  <Card.Content>
-                    <Title>Let's Play!</Title>
-                  </Card.Content>
-                  <Card.Cover
-                    source={{
-                      uri:
-                        'https://i.pinimg.com/originals/7c/6e/e5/7c6ee5d09231cad248003871bfa04b22.gif',
-                    }}
-                    style={{width: 160, borderRadius: 10}}
-                  />
-                </Card>
-              </TouchableOpacity>
-            </View>
-          </View>
-        </View>
       </View>
     </ScrollView>
   );
