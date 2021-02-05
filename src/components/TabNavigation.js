@@ -10,7 +10,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 // import FitnessScreen from '../screens/FitnessScreen';
 import {colors} from '../constants/theme';
 import {View, Text} from 'react-native';
-// import HomeStackNavigator from './HomeStackNavigation';
+import HomeStackNavigator from './HomeStackNavigation';
 // import FitnessStackNavigator from './FitnessStackNavigation'
 // import VentItOut from '../screens/VentItOut'
 
@@ -58,7 +58,7 @@ const TabNavigation = () => {
           margin: 8,
         },
       }}>
-      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="Home" component={HomeStackNavigator} />
       <Tab.Screen name="Story" component={HomeScreen} />
       <Tab.Screen name="Therapist" component={HomeScreen} />
       <Tab.Screen name="Fitness" component={HomeScreen} />

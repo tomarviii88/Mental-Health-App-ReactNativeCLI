@@ -6,9 +6,11 @@ import {
 } from '../actions/type';
 
 const initialState = {
-  isLogin: true,
+  isLogin: false,
   user: null,
-  profile: null,
+  profile: {
+    name: 'Ritika Tomar',
+  },
 };
 
 export default function(state = initialState, action) {
